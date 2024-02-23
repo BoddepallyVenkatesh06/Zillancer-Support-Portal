@@ -1,0 +1,577 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark-blue {
+    background-color: #12172B;
+}
+
+.gray {
+    background-color: #E6E6E6;
+}
+
+.yellow {
+    background-color: #F09400;
+}
+
+.text-yellow {
+    color: #F29600;
+}
+
+.px-8 {
+    padding: 0 5rem;
+}
+
+.nav-link {
+    font-size: 19px !important;
+}
+
+/* Banner styling */
+#banner {
+    background: url('assets/images/banner.svg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    min-height: 50vh; /* or more, depending on the amount of content */
+    padding: 40px 0 !important;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 0 15px; /* Add some padding on the sides */
+    /* background-color: aquamarine; */
+}
+
+.banner-content {
+    max-width: 600px; /* Adjust the width of the text content */
+    padding-right: 150px; /* Add padding to push the content from the right */
+    margin: 0 auto;
+}
+
+/* Additional styling for the Banner content */
+.banner-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2 !important;
+    margin-bottom: .5rem !important;
+    color: #f09400; /* Adjust the color as needed */
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    color: #666; /* Adjust the color as needed */
+    line-height: 1.6;
+    /* add letter spacing */
+    word-spacing: 0.1rem;
+
+}
+
+.banner-image {
+    display: none;
+}
+/* End of Banner Styling */
+
+.card {
+    height: 35rem;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.578);
+    border: 0px;
+}
+
+.right-icon {
+    width: 25px;
+}
+
+.accordion {
+    border: 0px;
+}
+
+.accordion-button::after {
+    background: url(assets/images/plus.svg);
+    width: 30px;
+    height: 32px;
+}
+
+.accordion-button {
+    background-color: #12172B;
+    color: #fff;
+    font-size: 0.8rem;
+
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #12172B;
+    color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: url(assets/images/Minus_Close.svg);
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Custom styles for the yellow 'Sign-up' button */
+.custom-yellow-btn {
+ 
+    /* The yellow background color */
+    border: none;
+    /* Removes the border */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Adjust the padding to match your design */
+    border-radius: 30px;
+    /* Rounded corners */
+    font-weight: 700;
+    /* Makes the font bold */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Custom styles for the 'Login' button with outline */
+.custom-outline-btn {
+    background-color: transparent;
+    /* Transparent background */
+    color: #F09400;
+    /* Text color */
+    border: 2px solid #F09400;
+    /* Border color */
+    padding: 8px 18px;
+    /* Adjust the padding to match your design */
+    border-radius: 30px;
+    /* Rounded corners */
+    font-weight: 700;
+    /* Makes the font bold */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Ensure that the focus outline is removed for aesthetic purposes */
+.custom-yellow-btn:focus,
+.custom-outline-btn:focus {
+    box-shadow: none;
+}
+
+/* Define the hover effect for the 'Sign-up' button */
+.custom-yellow-btn:hover {
+    background-color: #cc7a00;
+    /* Manually specified darker yellow color */
+}
+
+/* Define the hover effect for the 'Login' button */
+.custom-outline-btn:hover {
+    background-color: #F09400;
+    /* Fills the button on hover */
+    color: white;
+    /* White text on hover */
+}
+
+/* Button styling for the signup and login */
+/* Custom styles for the yellow 'Sign-up' button */
+.custom-yellow-btn {
+    background-color: #F09400;
+    /* The yellow background color */
+    border: none;
+    /* Removes the border */
+    color: black;
+    /* Text color */
+    padding: 10px 20px;
+    /* Adjust the padding to match your design */
+    border-radius: 30px;
+    /* Rounded corners */
+    font-weight: 700;
+    /* Makes the font bold */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+    min-width: 130px;
+}
+
+/* Custom styles for the 'Login' button with outline */
+.custom-outline-btn {
+    background-color: transparent;
+    /* Transparent background */
+    color: black;
+    /* Text color */
+    border: 2px solid #F09400;
+    /* Border color */
+    padding: 8px 19.5px !important;
+    min-width: 130px;
+    border-radius: 30px;
+    /* Rounded corners */
+    font-weight: 700;
+    /* Makes the font bold */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+
+/* Ensure that the focus outline is removed for aesthetic purposes */
+.custom-yellow-btn:focus,
+.custom-outline-btn:focus {
+    box-shadow: none;
+}
+
+/* Define the hover effect for the 'Sign-up' button */
+.custom-yellow-btn:hover {
+    background-color: #cc7a00;
+    /* Manually specified darker yellow color */
+    color: white;
+    /* White text on hover */
+}
+
+/* Define the hover effect for the 'Login' button */
+.custom-outline-btn:hover {
+    background-color: #F09400;
+    /* Fills the button on hover */
+    color: white;
+    /* White text on hover */
+}
+
+
+/* Styles for the 'Sign-up' button */
+.signup-button-hero {
+    background-color: #F09400;
+    /* Yellow background color */
+    color: black;
+    /* White text */
+    border-radius: .5rem;
+    /* Bootstrap's 'rounded-2' is .5rem */
+    font-weight: 600;
+    /* Semi-bold text */
+    font-size: 1.25rem;
+    /* 'fs-4' in Bootstrap is 1.25rem */
+    margin-top: 1.5rem;
+    /* 'mt-4' in Bootstrap is 1.5rem */
+    padding: .5rem 1.5rem;
+    /* 'px-4' and 'py-2' in Bootstrap are 1.5rem and .5rem respectively */
+    transition: background-color 0.2s, box-shadow 0.2s;
+    /* Smooth transition for hover and focus */
+}
+
+/* Hover effect */
+.signup-button-hero:hover {
+    background-color: #cc7a00;
+    /* Darker yellow on hover */
+    color: white;
+    /* White text on hover */
+}
+
+/* Focus effect */
+.signup-button-hero:focus {
+    background-color: #cc7a00;
+    /* Darker yellow on focus */
+    box-shadow: 0 0 0 0.2rem rgba(240, 148, 0, 0.5);
+    /* A light yellow glow */
+    outline: none;
+    /* Removes the default focus outline */
+}
+
+/* END of Button styling for the signup and login */
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+/* Hide desktop form on mobile screens */
+@media (max-width: 768px) {
+    .form-desktop {
+        display: none !important;
+    }
+}
+
+/* Hide mobile form on larger screens */
+@media (min-width: 769px) {
+    .form-mobile {
+        display: none !important;
+    }
+}
+
+/* Optional: Adjust padding to ensure the line is not too far from text */
+.nav-link {
+    padding-bottom: .5rem;
+    /* Or whatever value suits your design */
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 10px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 10px;
+}
+
+.accordion-body {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 3px solid #12172B;
+    border-top: 0px;
+    position: relative;
+    bottom: 10px;
+}
+
+.yellow-line {
+    border-top: 2px solid #F09400;
+    margin-top: 19px;
+}
+
+/* Add this new CSS to style the buttons according to the image */
+.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+.btn-outline-warning {
+    color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+/* This ensures that the buttons have rounded edges */
+.btn-warning,
+.btn-outline-warning {
+    border-radius: 20px;
+}
+
+/* This will remove the default box-shadow from the Bootstrap buttons when they are clicked */
+.btn-warning:focus,
+.btn-outline-warning:focus {
+    box-shadow: none;
+}
+
+/* This will ensure there is no gap between the navbar items */
+.nav-item+.nav-item {
+    margin-left: 0;
+}
+
+/* This will remove the default underlines from the navbar links */
+.nav-link {
+    text-decoration: none;
+}
+
+
+/* This will ensure the buttons are aligned on the same line as the navbar links */
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+/* Add space between accordion items */
+.accordion-item {
+    margin-bottom: 1rem;
+    /* Adjust the value as needed */
+}
+
+.card-title {
+    min-height: 60px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+.overview-card {
+    height: 40rem;
+}
+
+.nav-link.active-link {
+    background-color: transparent;
+    /* Clear any background */
+    border-bottom: 3px solid #F09400;
+    /* Underline Effect */
+    border-radius: 0;
+    /* Straight edges */
+    color: #000;
+    /* Black text */
+}
+
+/* nav link for pricing section */
+/* Styles for nav-pills */
+.nav-pills .nav-link {
+    margin-right: 5px;
+    /* Adjust the margin as needed */
+    border: none;
+    border-radius: 0;
+    /* Removes the rounded corners */
+    background-color: transparent;
+    /* Transparent background */
+    color: #000;
+    /* Text color */
+    padding-bottom: 5px;
+    /* Adjust padding to align the underline */
+    padding: 10px 15px;
+    /* Padding around the text */
+    font-size: 16px;
+    /* Font size */
+}
+
+/* Styles for the active state of the nav-pills */
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    color: #000;
+    /* Text color for active state */
+    background-color: transparent;
+    /* Transparent background for active state */
+    border-bottom: 3px solid #F09400;
+    /* Underline color */
+}
+
+#show-more {
+    display: none !important
+  }
+
+/* Additional styling to ensure the pills are inline and spaced correctly */
+.nav-pills {
+    display: flex;
+    /* Ensures the pills are in a row */
+    justify-content: space-between;
+    /* Adjusts spacing between pills */
+    flex-wrap: nowrap;
+}
+
+#footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (min-width: 992px) {
+    /* Adjust for the breakpoint at which the navbar expands */
+
+
+    .navbar form .btn {
+        padding: 0.375rem 0.75rem;
+        /* Bootstrap's default padding for buttons */
+        margin-left: 0.5rem;
+        /* Ensure some space between the buttons */
+    }
+
+    /* If you have specific classes for the buttons, you can add more padding like this: */
+    .btn.yellow,
+    .btn.btn-outline-primary {
+        padding: 0.5rem 1rem;
+        /* Increase padding for better spacing */
+        /* Adjust the padding as needed to prevent the buttons from squishing */
+    }
+}
+
+
+/* tablet screens */
+@media (max-width: 1025px) {
+    #pills-tab {
+
+        font-weight: 800 !important;
+    }
+
+    .limited-offer-button {
+        font-size: 0.78rem;
+        font-weight: 800;
+    }
+
+    .getting-started-h3 {
+        font-size: 1rem;
+    }
+
+    .getting-started-h5 {
+        font-size: 1rem;
+    }
+
+    .overview-card {
+        height: 30rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* mobile screens */
+
+@media (max-width: 575.98px) {
+
+    .nav-link {
+        font-size: 0.8rem !important;
+    }
+
+    .hero {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+     
+    }
+
+
+    .hero-h4 {
+        font-size: 1rem !important;
+    }
+
+    .fontsize-1rem {
+        font-size: 1rem !important;
+    }
+
+    .btn-warning,
+    .btn-outline-warning {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .form-inline {
+        flex-direction: column;
+    }
+
+    /* FAQ for mobile screens*/
+    #show-more {
+        display: block !important
+      } 
+
+      .logo {
+        width: 150px;
+    }
+}
+/* Banner media query for mobile screens */
+@media (max-width: 575.98px) {
+    #banner {
+        height: auto; /* Adjust the height to fit the content */
+        background: none; /* Removes the background image */
+        flex-direction: column; /* Stacks items vertically */
+        justify-content: flex-start; /* Aligns content to the top */
+        padding-top: 20px; /* Adds some padding at the top */
+    }
+
+    .banner-content {
+        text-align: left; /* Centers the text for mobile screens */
+        padding-right: 0; /* Removes the padding on the right */
+
+    }
+
+    .banner-image {
+        display: block; /* Makes the image visible */
+        width: 100%; /* Full width */
+        height: auto; /* Maintains aspect ratio */
+        margin-top: 20px; /* Adds space between the text and the image */
+    }
+
+    .banner-content h1 {
+        font-size: 1.5rem;
+        /* Adjust the font size as needed */
+        
+    }
+    .banner-content p {
+        font-size: 1rem;
+        /* Adjust the font size as needed */
+        text-align: left;
+    }
+}
